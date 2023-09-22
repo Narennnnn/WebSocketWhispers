@@ -6,42 +6,42 @@
     <title>Chat Tupi | Spring Boot + WebSocket</title>
     <link rel="stylesheet" href="/css/main.css" />
 </head>
-<body background="maxresdefault.jpg"
-      style="background-position: center; background-repeat: no-repeat; background-size: cover;">
+<body>
 <noscript>
-    <h2>Opa! Parece que este browser não suporta JavaScript</h2>
+    <h2>Oops! It seems this browser doesn't support JavaScript</h2>
 </noscript>
 
 <div id="username-page">
     <div class="username-page-container">
-        <h1 class="title">Digite seu nome</h1>
+        <h1 class="title">Enter your name</h1>
         <form id="usernameForm" name="usernameForm">
             <div class="form-group">
-                <input type="text" id="name" placeholder="Nome"
+                <input type="text" id="name" placeholder="Name"
                        autocomplete="off" class="form-control" />
             </div>
             <div class="form-group">
-                <button type="submit" class="accent username-submit">Comece a conversar</button>
+                <button type="submit" class="accent username-submit">Start chatting</button>
             </div>
         </form>
     </div>
 </div>
 
+
 <div id="chat-page" class="hidden">
     <div class="chat-container">
         <div class="chat-header">
-            <h2>ChatBox Tupi</h2>
+            <h2>ChatterBox</h2>
         </div>
-        <div class="connecting">Conectando ao chat...</div>
+        <div class="connecting">Connecting to the chat...</div>
         <ul id="messageArea">
-
+            <!-- Chat messages will be added here dynamically -->
         </ul>
         <form id="messageForm" name="messageForm" nameForm="messageForm">
             <div class="form-group">
                 <div class="input-group clearfix">
-                    <input type="text" id="message" placeholder="Digite uma mensagem..."
+                    <input type="text" id="message" placeholder="Type a message..."
                            autocomplete="off" class="form-control" />
-                    <button type="submit" class="primary">Enviar</button>
+                    <button type="submit" class="primary">Send</button>
                 </div>
             </div>
         </form>
